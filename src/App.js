@@ -104,18 +104,6 @@ function App() {
           <figcaption style={{marginLeft: '180px'}}>Tushar Shetty</figcaption>
           </figure>
           </div>
-          {/* <img
-            src="https://images.fineartamerica.com/images-medium-large-5/tiger-profile-david-stribbling.jpg"
-            alt="tiger"
-            className="profile"
-            id="img1"
-          />
-          <img
-            src="https://image.shutterstock.com/image-photo/peacock-spread-wings-profile-260nw-567926224.jpg"
-            alt="peacock"
-            className="profile"
-            id="img2"
-          /> */}
         </div>
       </div>
       <div className="container2">
