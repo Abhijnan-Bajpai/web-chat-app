@@ -107,8 +107,6 @@ function App() {
         </div>
       </div>
       <div className="container2">
-          {/*<h1>Welcome to the global chat!</h1>
-          <h2>Hey {username}!</h2>*/}
         <form className="app__form">
           <FormControl className="app__formControl">
             <Input
