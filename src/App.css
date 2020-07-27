@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+/* @font-face{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+} */
+.IFSCR {
+  top: 0;
+  left: 0;
+}
+body {
+  background-image: url(./background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* font-family: 'Open Sans'; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::placeholder {
+  color: rgb(0, 191, 255) !important;
+  font-weight: bold;
+  opacity: 100% !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__form {
+  /* TODO: can change the properties here */
+  background-color: rgb(255, 255, 255);
+  opacity: 80%;
+  color: rgb(42, 50, 0);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 98.7%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 30%;
+  /* margin: 20px;  */
+  /* overflow: hidden; */
+  /* border-radius: 20px; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app__formControl {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.app__input {
+  flex: 1;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__iconButton {
+  flex: 0;
+  color: aqua;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.send__icon {
+  color: rgb(0, 191, 255) !important;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 220px;
+  right: 0;
+  background-color: #00ba3e;
+  overflow: hidden;
+  width: 0;
+  height: 31%;
+  transition: 0.5s ease;
+  z-index: 1;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+.container:hover .overlay {
+  width: 80%;
+}
+.heading{
+  flex:0;
+  display: flex !important;
+  flex-direction: row !important;
 }

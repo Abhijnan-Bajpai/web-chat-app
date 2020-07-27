@@ -1,0 +1,35 @@
+.message{
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    outline: 20px black
+}
+.message__user{
+    margin-left: auto;
+    color: rgb(255, 167, 167);
+    text-align: left !important;
+    /* border-radius: 100%; */
+}
+.message__userCard
+{
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,255,15,1) 0%, rgba(33,130,4,1) 100%);
+    color: rgb(255, 255, 255) !important;
+    /* font-family: ; */
+    /* border-radius: 100%; */
+}
+.message__guestCard
+{
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(105,105,105,1) 100%);
+    color: rgb(129, 15, 129) !important;
+}
+.time{
+    margin-left: 20px;
+    margin-top: 9px;
+    font-size: 15px;
+}
+.container2{
+    margin-top: 50px; 
+    margin-bottom: 80px;
+}
