@@ -17,12 +17,17 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,255,15,1) 0%, rgba
     color: rgb(255, 255, 255) !important;
     /* font-family: ; */
     /* border-radius: 100%; */
+    border-top-right-radius: 30% !important;
+    border-bottom-left-radius: 30% !important;
+
 }
 .message__guestCard
 {
     background: rgb(2,0,36);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(105,105,105,1) 100%);
     color: rgb(129, 15, 129) !important;
+    border-top-left-radius: 30% !important;
+    border-bottom-right-radius: 30% !important;
 }
 .time{
     margin-left: 20px;

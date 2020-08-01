@@ -6,9 +6,11 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import './Message.css';
+import decrypt from "/home/abhijnan/messages/src/Encryption.js";
 
 const Message = forwardRef(({message, username}, ref) => {
   const isUser = username === message.username;
+  var dec=decrypt(message.message)
 
   const useStyles = makeStyles({
     root: {
@@ -31,7 +33,7 @@ const classes = useStyles();
 
   return (
     <div ref={ref} className={`message ${isUser && 'message__user'}`}>
-      <Card className={isUser ? "message__userCard" : "message__guestCard"} style={{borderRadius: '40%', border:"80 px", borderStyle:'groove', borderColor:'grey'}}>
+      <Card className={isUser ? "message__userCard" : "message__guestCard"}>
         <CardContent>
           <Typography className={classes.title} style={{textAlign: 'left', fontWeight: 'bold'}}>
           {!isUser && `${message.username || "Unknown user"}`}
@@ -41,8 +43,7 @@ const classes = useStyles();
             variant="h5"
             component = "h2"
             style={{display: 'flex', flexDirection: 'row', marginLeft: '20px'}}>
-
-                {message.message}
+                {dec}
                 <span className="time"> 
                 {message.time}
                 </span>
@@ -52,5 +53,6 @@ const classes = useStyles();
     </div>
   );
 })
+
 
 export default Message;
